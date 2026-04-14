@@ -1,0 +1,349 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .heading {
+        background-color: #2c2c2c;
+        color: white;
+        padding: 17px;
+        transition: all 0.3s ease;
+        position: relative;
+        font-family: inherit;
+        font-size: clamp(18px, 4vw, 36px);
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 100px;
+        text-align: center;
+        position: relative;
+    z-index: 5;
+    }
+
+    .heading h1 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+    }
+
+    .heading p {
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+    }
+
+    .row {
+        display: flex;
+        flex: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .myimage {
+        position: absolute;
+    bottom: -66px;
+    left: 10px;
+    transform: translateX(5%);
+    z-index: 999
+    }
+
+    .myimage img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 7px solid gray;
+        object-fit: cover;
+    }
+
+    .container {
+        background-color: #dbdada;
+        text-align: left;
+        padding: 10px;
+        width: 50%;
+        font-family: "Quicksand", sans-serif;
+        padding-left: 40px;
+    }
+
+    .main-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 17px;
+        margin-top: 17px;
+    }
+
+    .mycon {
+        color: black;
+        margin-top: 80px;
+    }
+
+    .container p {
+        word-break: break-word;
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+
+    .tech-skill {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .soft-skill {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .my-lang-names {
+        padding-bottom: 10px;
+    }
+
+    .about {
+        background-color: #dbdada;
+        color: black;
+        padding: 10px;
+        text-align: left;
+        transition: all 0.3s ease;
+        width: 50%;
+        font-family: "Quicksand", sans-serif;
+        padding-left: 40px;
+    }
+
+    .sum-padding {
+        line-height: 1.7;
+    }
+
+    .myedu-expla {
+        line-height: 1.6;
+    }
+
+    .myexp-list {
+        line-height: 1.9;
+    }
+
+    .myproj-list {
+        line-height: 1.9;
+    }
+
+    hr {
+        margin-top: 10px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .port-fotter {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'Arial';
+    }
+
+    h1,
+    h3,
+    h4 {
+        margin: 10px 0;
+        line-height: 1.2;
+    }
+
+    /* ========================= */
+    /* SCROLL REVEAL (ADDED ONLY) */
+    /* ========================= */
+
+    .heading,
+    .container,
+    .about,
+    .port-fotter {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.8s ease;
+    }
+
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+
+        .row {
+            flex-direction: column;
+        }
+
+        .container,
+        .about {
+            width: 100%;
+        }
+
+        .heading {
+            padding-left: 20px;
+            text-align: center;
+        }
+
+         .myimage {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .myimage img {
+        width: 140px;
+        height: 140px;
+    }
+
+        .container {
+            padding-left: 20px;
+        }
+
+        .mycon {
+            margin-top: 20px;
+        }
+    }
+</style>
+
+<div class="heading">
+    <h1>Alisha Saleem</h1>
+    <p>Bachelor of Science in Computer Science</p>
+
+    <div class="myimage">
+        <img src="https://images.unsplash.com/photo-1729201025889-9d2a20fd5afd?fm=jpg&q=60&w=3000&auto=format&fit=crop">
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+
+        <div class="mycon">
+            <h3 class="main-head"><i class="fa-solid fa-address-book mycon-icon"></i><b>CONTACT</b></h3>
+        </div>
+
+        <p>
+            <b>Name:</b> Alisha Saleem<br>
+            <b>Adress:</b> Samijabad No 1, Muhalla Mughal Pur, Multan.<br>
+            <b>Phone:</b> 03278752403<br>
+            <b>Email:</b> thestardust24@gmail.com<br>
+        </p>
+
+        <div class="mylang">
+            <h3 class="main-head"><i class="fa-solid fa-earth-asia mylang-icon"></i><b>LANGUAGES</b></h3>
+            <ul class="my-lang-names">
+                <li>English</li>
+            </ul>
+            <ul class="my-lang-names">
+                <li>Urdu</li>
+            </ul>
+        </div>
+
+        <div class="myskills">
+            <h3 class="main-head"><i class="fa-solid fa-gears myskills-icon"></i><b>SKILLS</b></h3>
+
+            <h4>Technical Skills</h4>
+            <ul class="tech-skill">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>Database(SQL/MySQL)</li>
+                <li>Canva</li>
+                <li>MS Office</li>
+            </ul>
+
+            <h4>Soft Skills</h4>
+            <ul class="soft-skill">
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Problem-solving</li>
+                <li>Time Management</li>
+                <li>Adaptability</li>
+                <li>Critical Thinking</li>
+            </ul>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="about">
+
+        <div class="mysum">
+            <h3 class="main-head"><i class="fa-solid fa-circle-info mysum-icon"></i><b>SUMMARY</b></h3>
+            <p class="sum-padding">Motivated Employee worked with multiple <br>companies as Brand Ambassador.<br>
+                Polish myself in any way as needed,<br>deal with different people, boost confidence<br>and improve
+                personality.</p>
+        </div>
+
+        <div class="myedu">
+            <h3 class="main-head"><i class="fa-solid fa-graduation-cap myedu-icon"></i><b>EDUCATION</b></h3>
+            <p class="myedu-expla"><b>Times University</b>,Multan</p>
+            <p class="myedu-expla"><i>Bachelor of Science in Computer Science</i></p>
+            <p class="myedu-expla">2023-2027</p>
+        </div>
+
+        <div class="myexp">
+            <h3 class="main-head"><i class="fa-solid fa-user-tie myexp-icon"></i><b>EXPERIENCE</b></h3>
+            <p>Super sweep Multan, <b>Brand Ambassador</b><br>May 2024 - July 2025</p>
+            <ul class="myexp-list">
+                <li>Deal with multiple customers</li>
+                <li>Make improvement in Product Selling</li>
+                <li>Remain punctual and attentive all the time</li>
+                <li>Build Personality and Boost confidence</li>
+            </ul>
+        </div>
+
+        <div class="myproj">
+            <h3 class="main-head"><i class="fa-solid fa-diagram-project myproj-icon"></i><b>PROJECTS</b></h3>
+
+            <h4>Project 1: Calculator (Python)</h4>
+            <ul class="myproj-list">
+                <li>Developed a simple calculator using <b>Python</b>.</li>
+                <li>Performs basic arithmetic operations(+,-,*,/)</li>
+            </ul>
+
+            <h4>Project 2: Portfolio website (HTML, CSS)</h4>
+            <ul class="myproj-list">
+                <li>Designed and developed a personal portfolio website.</li>
+                <li>showcase personal information,skills and experience.</li>
+                <li>Built using <b>HTML</b> and <b>CSS</b>(first web project)</li>
+            </ul>
+        </div>
+
+        <div class="myref">
+            <h3 class="main-head"><i class="fa-solid fa-link myref-icon"></i><b>REFERENCE</b></h3>
+            <p>Reference will be furnished upon request.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer class="port-fotter">
+    <p>@ 2026 Alisha Saleem.All rights reserved.</p>
+</footer>
+
+<script>
+    const items = document.querySelectorAll(
+        ".heading, .container, .about, .port-fotter"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    items.forEach(el => observer.observe(el));
+</script>
